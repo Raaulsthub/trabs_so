@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdalign.h>
+#include <stdlib.h>
 #include "tabela_processos.h"
 #include "cpu_estado.h"
 #include "mem.h"
@@ -25,6 +25,7 @@ tabela_t* tabela_cria() {
     tabela_t* tabela = (tabela_t*) malloc(sizeof(tabela_t));
     tabela->tam = 0;
     tabela->processos = (processo_l**) malloc (100 * sizeof(processo_l*));
+    return tabela;
 }
 
 void tabela_destroi(tabela_t* self) {

@@ -1,6 +1,9 @@
 #ifndef TABELA_H
 #define TABELA_H
 
+#include "cpu_estado.h"
+#include "mem.h"
+
 typedef struct processo_l processo_l;
 typedef struct tabela_t tabela_t ;
 
